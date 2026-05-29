@@ -127,25 +127,24 @@ while True:
     
 
     cv2.putText(
-            frame,
-            f"Confidence: {confidence_score}%",
-            (20, 80),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            0.9,
-            (0, 255, 255),
-            2
-        )
+        frame,
+        f"Confidence: {last_confidence}%",
+        (20, 80),
+        cv2.FONT_HERSHEY_SIMPLEX,
+        0.9,
+        (0, 255, 255),
+        2
+    )
 
-    cv2.putText(
-            frame,
-            f"Emotion: {final_emotion}",
-            (20, 40),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            1,
-            (0, 255, 0),
-            2
-        )
-    
+cv2.putText(
+        frame,
+        f"Emotion: {last_emotion}",
+        (20, 40),
+        cv2.FONT_HERSHEY_SIMPLEX,
+        1,
+        (0, 255, 0),
+        2
+    )
     cv2.putText(
     frame,
     f"Q: {questions[current_question]}",
